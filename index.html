@@ -1,0 +1,60 @@
+<head>
+    <style>
+        @font-face {
+            font-family: Ai Love;
+            src: url(AiLove-x391O.ttf);
+        }
+        @font-face {
+            font-family: Shikamaru;
+            src: url(Shikamaru-WyK5O.ttf);
+        }
+        @font-face {
+            font-family: Assassin Ninja;
+            src: url(AssassinNinja-w12j8.ttf);
+        }
+         *{ /* every single element of codument will respect this */
+            box-sizing: border-box; /* consider the border of elements to calculate the padding */
+            font-family: Assassin Ninja;
+            font-size: 40px;
+            font-style: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- red container div -->
+    <div style="position: relative; display: inline-block;"> <!-- define the limit of this div iquals the canvas sizes -->
+        <!-- smoller red container div -->
+        <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px;"> <!-- make the topbar stay above, display flex not block -->
+
+            <!-- player health -->
+            <div style="position: relative; ; width: 100%; display: flex; justify-content: flex-end; border-top: 4px solid whitesmoke; border-left: 4px solid whitesmoke;; border-bottom: 4px solid whitesmoke;"> <!-- invertion of bar -->
+                <div style="background-color: brown; height: 30px; width: 100%;"></div>
+                <div id="playerHealth" style="position: absolute; background: #818CF8; top: 0; right: 0; width: 100%; bottom: 0;"></div>
+            </div>
+
+
+            <!-- timer -->
+            <div id="timer" style="font-family: Ai Love; font-size: 45px; color: white; background-color: brown; height: 70px; width: 100px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; padding-top: 8px; border: 4px solid whitesmoke"></div>
+
+
+            <!-- enemy health -->
+            <div style="position: relative; ; width: 100%; border-top: 4px solid whitesmoke; border-right: 4px solid whitesmoke;;border-bottom: 4px solid whitesmoke;">
+                <div style="background-color: brown; height: 30px;"></div>
+                <div id="enemyHealth" style="position: absolute; background: #818CF8; top: 0; right: 0; left: 0; bottom: 0;"></div>
+            </div>
+
+        </div>
+
+        <!-- display text -->
+        <div id="displayText" style="position: absolute; color: white; display: none; align-items: center; justify-content: center; top: 0; bottom: 0; left: 0; right: 0;"></div>
+    
+        <canvas></canvas>
+    </div>
+
+    <style>body{background: rgb(79, 79, 79);}</style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+</body>

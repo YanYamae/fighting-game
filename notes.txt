@@ -1,0 +1,3 @@
+-Turn the enemy direction
+-Decrese the volocity of takeHit player and enemy
+-Bug on border of animation's shop
